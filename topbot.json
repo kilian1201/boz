@@ -1,0 +1,23 @@
+{
+ "queue": [],
+ "bots": [
+   {
+      "id": "518584469427585027",
+      "name": "TankLogs#1404",
+      "prefix": "+",
+      "owner": [
+        "465148709936562176"
+      ],
+      "desc": "My bot is shit thats why I added it here.",
+      "longdesc": "Not provided",
+      "git": "",
+      "website": "",
+      "support": "",
+      "library": "discord.js",
+      "certified": false,
+      "apiKey": "16qfd144erwrnl81bs6ssj0pdqjmedsgx0mmcm2nwtalpkibhho4d7l0rh2uhov5h0e3zbqv51vh5ak4x9umse6liupqjxgiq20o"
+    }
+ ], 
+ "users": [], 
+ "certifyQueue": []
+}

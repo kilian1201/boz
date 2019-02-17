@@ -1,0 +1,81 @@
+@keyframes mover {
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+@-webkit-keyframes mover {
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+body {
+  background-image: url('https://cdn.discordapp.com/attachments/500730818327478283/500732476654878730/bot.png');
+}
+
+.card{
+   animation: mover 0.1s alternate infinite;
+}
+
+img {
+   animation: mover 0.1s alternate infinite;
+}
+a {
+   animation: mover 0.1s alternate infinite;
+   background-color: red !important;
+}
+span {
+   animation: mover 0.1s alternate infinite;
+   background-color: red !important;
+} 
+
+@-moz-keyframes spin {
+  100%{
+    -moz-transform: rotate(-360deg);
+  }
+  0%{
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100%{
+    -moz-transform: rotate(-360deg);
+  }
+  0%{
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100%{
+    -moz-transform: rotate(-360deg);
+  }
+  0%{
+    -moz-transform: rotate(360deg);
+  }
+}
+img {
+   animation: spin 1s infinite alternate !important;
+}
+
+a {
+   animation: spin 5s infinite alternate !important;
+}
+
+p {
+   animation: spin 2s infinite alternate !important;
+}
+
+h1 {
+   animation: spin 0.5s infinite alternate !important;
+} 
+
+input {
+   animation: spin 0.5s infinite alternate !important;
+} 

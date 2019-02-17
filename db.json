@@ -1,0 +1,129 @@
+{
+  "queue": [
+    {
+      "id": "530086775104864266",
+      "name": "Naknak Bot#2810",
+      "prefix": "? or @Naknak Bot#2810",
+      "hc": "? or @Naknak Bot#2810",
+      "owner": [
+        "471973265594908673"
+      ],
+      "desc": "NakNak is a Discord bot made by discord.js.\r\nin NakNak have alot of commands funny and more other commands.\r\nhim commands looks good and him have good config with much of options!",
+      "git": "",
+      "website": "https://naknak-bot.glitch.me",
+      "support": "ctjNJju",
+      "library": "discord.js",
+      "certified": false
+    }
+  ],
+  "bots": [
+    {
+      "id": "518584469427585027",
+      "name": "TankLogs#1404",
+      "prefix": "+",
+      "owner": [
+        "465148709936562176"
+      ],
+      "desc": "My bot is shit thats why I added it here.",
+      "longdesc": "Not provided",
+      "git": "",
+      "website": "",
+      "support": "",
+      "library": "discord.js",
+      "certified": true,
+      "apiKey": "16qfd144erwrnl81bs6ssj0pdqjmedsgx0mmcm2nwtalpkibhho4d7l0rh2uhov5h0e3zbqv51vh5ak4x9umse6liupqjxgiq20o"
+    },
+    {
+      "id": "440182142207655947",
+      "name": "Watchdog Bot#8569",
+      "prefix": "/",
+      "hc": "/",
+      "owner": [
+        "388320576407863297"
+      ],
+      "desc": "Watchdog || Moderation || Economy || Music || Config || Fun",
+      "git": "",
+      "website": "",
+      "support": "bJE7ehH",
+      "library": "discord.js",
+      "certified": false
+    },
+    {
+      "id": "541374917313298432",
+      "name": "iGloby#2654",
+      "prefix": ".",
+      "hc": ".",
+      "owner": [
+        "415736103140851722"
+      ],
+      "desc": "A Discord bot, with a good globalchat system.\r\n",
+      "git": "",
+      "website": "",
+      "support": "AQ9bN2P",
+      "library": "discord.js",
+      "certified": false
+    },
+    {
+      "id": "535124489382526976",
+      "name": "Discord Mail#7176",
+      "prefix": "-",
+      "hc": "-",
+      "owner": [
+        "510775757132398602"
+      ],
+      "desc": "Your players need support? Get Discord Mail!",
+      "git": "https://github.com/catsarecoo/discord-mail",
+      "website": "https://discord-mail.glitch.me/",
+      "support": "mYb5xjx",
+      "library": "Custom",
+      "certified": false
+    },
+    {
+      "id": "457997106855149578",
+      "name": "Kephux#5402",
+      "prefix": "+",
+      "hc": "+",
+      "owner": [
+        "220667351622877194"
+      ],
+      "desc": "Space-themed discord bot for general usage.",
+      "git": "",
+      "website": "",
+      "support": "E79KdWW",
+      "library": "discord.js",
+      "certified": false
+    },
+    {
+      "id": "522490058599694357",
+      "name": "GameBot#2148",
+      "prefix": "g!",
+      "hc": "g!",
+      "owner": [
+        "316373998378418176"
+      ],
+      "desc": "A bot with commands for Fortnite and Splatoon",
+      "git": "",
+      "website": "https://GameBot.glitch.me",
+      "support": "UAw6rPp",
+      "library": "discord.py",
+      "certified": false
+    },
+    {
+      "id": "536949601349926912",
+      "name": "SlammBot#3169",
+      "prefix": "s!",
+      "hc": "s!",
+      "owner": [
+        "470918501524045825"
+      ],
+      "desc": "SlammBot is a Fun and Mod Bot\r\nSlammBot is Created 1Week ago and its Getting Updated every day\r\nWe have:\r\n\r\n+kick +clear +gif +help +meme +ping(Every bot has That.I hopexD) +stats +setup",
+      "git": "",
+      "website": "",
+      "support": "tj3Vjjd",
+      "library": "discord.js",
+      "certified": false
+    }
+  ],
+  "certifyQueue": [],
+  "users": []
+}

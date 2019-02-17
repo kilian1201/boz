@@ -1,0 +1,29 @@
+{
+  "queue":{
+    "desc": "TBA",
+    "errors": {
+      "color": "GREEN",
+      "empty": "Queue is empty"
+    }
+  },
+  "delete": {
+    "desc": "delete <@bot> <reason>",
+    "delete": {
+      "color": "#7289DA",
+      "msg": "Bot deleted"
+    }
+  },
+  "token":{
+    "desc":"token <bot mention>"
+  },
+  "prefix":{
+    "desc":"prefix <@Bot>",
+    "color":"#7289DA"
+  },
+  "owner":{
+    "desc":"owner <bot mention>"
+  },
+  "verified":{
+    "desc":"verified <@bot> <add/remove>"
+  }
+}

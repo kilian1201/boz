@@ -1,0 +1,46 @@
+{
+  "name": "DR",
+  "version": "2.0.0",
+  "description": "A discord bots list!",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "btoa": "^1.2.1",
+    "cookie-parser": "^1.4.3",
+    "discord.js": "^11.4.2",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "js-search": "^1.4.2",
+    "loggic": "^3.8.43",
+    "node-fetch": "^2.3.0",
+    "pug": "^2.0.3",
+    "params": "0.1.1",
+    "lowdb": "^1.0.0",
+    "generate-password": "^1.4.1",
+    "ejs-lint": "^0.3.0",
+    "consoled": "^1.2.2",
+    "chalk": "^2.4.1",
+    "passport": "^0.4.0",
+    "passport-oauth2": "^1.4.0",
+    "util": "^0.11.1",
+    "passport-strategy": "^1.0.0",
+    "express-session": "^1.15.6",
+    "discord": "^0.8.2",
+    "socket.io": "^2.2.0",
+    "blapi": "^1.0.1"
+  },
+  "engines": {
+    "node": "8.4.0"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/my-glitch-app"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}

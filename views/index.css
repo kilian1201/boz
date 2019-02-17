@@ -1,0 +1,7 @@
+.bgdark {  background-color: #2C2F33;}.bgblurple {    background-color: #7289DA;}.blurple-text {    color: #7289DA}.greyple-text { color: #99AAB5}.shadow {filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.65)); }
+    .card-img-top {
+    width: 50%;
+    position: fixed;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+      }
