@@ -1,0 +1,22 @@
+{
+  "usage":{
+    "color":"RED",
+    "title":"Usage"
+  },
+  "noperms":{
+    "color":"RED",
+    "title":"You do not have permission to perform that operation"
+  },
+  "nolist":{
+    "color":"RED",
+    "title":"The bot is not in the database"
+  },
+  "nobot":{
+    "title":"That user is not a bot.",
+    "color":"RED"
+  },
+  "errorguild":{
+    "title":"This is not the official Discord Bots World guild.",
+    "color":"RED"
+  }
+}

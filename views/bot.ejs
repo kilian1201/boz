@@ -1,0 +1,207 @@
+<html>
+	<head id="head">
+    <link rel="icon" type="image/png" sizes="32x32" href="hhttps://cdn.discordapp.com/attachments/500730818327478283/500732476654878730/bot.png">
+	  <meta property="og:title" content="<%= botInfo.name %> | DiscordRobots" />
+	  <meta property="og:image" value="/api/discord/avatar/<%= botInfo.id %>">
+	  <meta property="og:site_name" value="DiscordRobots">
+	  <meta property="og:description" content="Created by <%= ownerInfo %>">
+	  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	  <link rel="stylesheet" href="https://discordrobots.glitch.me/april">
+	  <title>
+	  <%= botInfo.name %>
+	  </title>
+	  <style>
+		.center {
+		  text-align: center;
+		}
+		
+		body {
+		  background: #7289DA;
+		  color: black;
+		}
+		
+			
+		
+  
+		
+		.botName {
+		    /*ANIMATION*/
+        -webkit-animation-name: colorchange; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+        animation-name: colorchange;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        /* Safari 4.0 - 8.0 */
+          @-webkit-keyframes colorchange {
+            0%   {color: yellow;}
+            25%  {color: red;}
+            50%  {color: blue;}
+            60%  {color: purple;}
+            70%  {color: black;}
+            90%  {color: green;}
+            100% {color: yellow;}
+          }
+        /* Standard syntax */
+          @keyframes h1 {
+            0%   {color: yellow;}
+            25%  {color: red;}
+            50%  {color: blue;}
+            60%  {color: purple;}
+            70%  {color: black;}
+            90%  {color: green;}
+            100% {color: yellow;}
+          }
+		}
+		
+		.ex {
+		  background: "#00000";
+      color: white;
+		  align: left
+		}
+		.bot-name {
+      font-weight: bold;
+      font-style: oblique;
+      color: colorchange
+      /*ANIMATION*/
+        -webkit-animation-name: colorchange; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+        animation-name: colorchange;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        /* Safari 4.0 - 8.0 */
+          @-webkit-keyframes colorchange {
+            0%   {color: yellow;}
+            25%  {color: red;}
+            50%  {color: blue;}
+            60%  {color: purple;}
+            70%  {color: black;}
+            90%  {color: green;}
+            100% {color: yellow;}
+          }
+        /* Standard syntax */
+          @keyframes h1 {
+            0%   {color: yellow;}
+            25%  {color: red;}
+            50%  {color: blue;}
+            60%  {color: purple;}
+            70%  {color: black;}
+            90%  {color: green;}
+            100% {color: yellow;}
+          }
+      }
+      
+		.botHelp {
+		  
+		}
+			 @keyframes mover {
+	  0%{
+		  transform: translateY(-10px);
+	  }
+	  100%{
+		  transform: translateY(5px);
+	  }
+  }
+  
+  @-webkit-keyframes mover {
+	  0%{
+		  transform: translateY(-10px);
+	  }
+	  100%{
+		  transform: translateY(5px);
+	  }
+  }
+			  .botAvatar {
+		  border-radius: 50%;
+		  box-shadow: 0px 3px 18px -3px black;
+		  width: 200px;
+		  margin-bottom: 2.5rem;
+		  animation: mover 1s infinite alternate !important;
+		}
+	  </style>
+	</head> 
+	<body>
+	  
+	  <div class="ex">
+		<br>
+		<a href="/bots" class="btn btn-green">
+          </button>
+        <a href="/bots" target="_blank"><button type="button" class=" btn btn-primary">
+          Bots
+          </button>
+		</a>
+      <br>
+		<br>
+	  </div>
+	  <center>
+		<img class="botAvatar" src="/api/discord/avatar/<%= botInfo.id %>">
+      <p class="is-flex"><span class="botName"><% botInfo.name %></span>
+        <b><p class="display-4"><%= botInfo.name %></p></b>
+        </p>
+      <p><b>
+														  <%if (bot.users.get(botInfo.id).presence.status === 'idle') {%>                        
+														<span class="badge badge-pill badge-pill badge-warning">IDLE</span> 
+													<%}%>
+													<%if (bot.users.get(botInfo.id).presence.status === 'online') {%>
+      <span class="badge badge-pill badge-success">ONLINE</span>
+        <%}%>
+													
+													<%if (bot.users.get(botInfo.id).presence.status === 'dnd') {%>
+														<span class="badge badge-pill badge-danger">DND</span> 
+													<%}%>
+													<%if (bot.users.get(botInfo.id).presence.status === 'offline') {%>
+														<span class="badge badge-pill badge-light">OFFLINE</span>
+													<%}%>
+          
+        </p></b>
+    		  <p>
+			Created by: <br><span class="badge badge-pill badge-danger"><%= ownerInfo %></span> 	      
+		  <p>
+      
+      
+      <p>   
+	<a class="btn btn-primary" href="https://discordapp.com/api/oauth2/authorize?client_id=<% botInfo.id %>&scope=bot">Invite</a>
+      <a href="<%= botInfo.support%>" target="_blank"><button type="button" class=" btn btn-primary">
+        Support
+          </button>
+        <a href="<%= botInfo.website%>" target="_blank"><button type="button" class=" btn btn-primary">
+          Website
+          </button>
+                      <a href="/report" target="_blank"><button type="button" class="btn btn-primary">
+          Report
+          </button>
+        </a>
+        </a>
+    </a>
+      </p>
+      <hr class="my-4">
+  
+		<div id='jumb'>
+		  <p>
+			Prefix: <b><%= botInfo.prefix %></b><br>
+		  </p>
+      <p>
+        Library: <b><%= botInfo.library%></b><br>
+      </p>
+		  <% if(botInfo.servers){ %>
+		  <p>
+			Server Count: <%= botInfo.servers%>
+		  </p>
+      <br>
+
+		  <% } %>
+      <hr class="my-4">
+        
+		  <div class="container" id="bot-description">
+			
+        <p>
+			  <%= botInfo.desc %>
+			</p>
+		  </div>
+      </hr>
+		</div>
+	  </div>
+  </center>
+	  <br>
+	</body> 
+  </html>

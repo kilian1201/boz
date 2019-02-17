@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Add Bot | Discord Listing</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	  <link rel="stylesheet" href="https://discordadvertising.glitch.me/april">
+    <link rel="icon" href="https://cdn.glitch.com/1efc3dfb-c314-492e-8d39-28870b8280d5%2Fimage.png?1549401037647" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+      body{
+        background: #222428;
+        color: white;
+      }
+            .error {
+  background-color: #F04747;
+  color: white;
+  padding-bottom: 15px;
+  margin-bottom: 17px;
+  box-shadow: 4px 4px 0 0 #c93a3a, inset 4px 4px 0 0 #f78585, inset -4px -4px 0 0 #F04747;
+}
+      .errormessage {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-top: 100px;
+  font-size: 30px;
+  font-family:Karla;
+}
+.error-banner-bottom {
+  background-color: #7289DA;
+  text-align: left;
+  font-family:Karla;
+  height: 160px;
+  padding-top: 10px;
+  padding-left: 20px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  border-top: 5px solid #CCCCCC;
+}
+
+.error-banner-bottom img {
+  width: 100px;
+  display: block;
+  margin: 0;
+
+}
+
+.error-banner-bottom ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.error-banner-bottom li {
+    float: left;
+}
+
+.error-banner-bottom li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+}
+
+.error-banner-bottom li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.error-messagee p {
+  font-family:Karla;
+}
+    </style>
+  </head>
+  <script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Error 404!";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+  <body>
+    &nbsp; &nbsp;&nbsp;&nbsp;<a style=" position: Absolute; top: 20px; right 0px;" href="/" class="btn btn-success" role="button">Back</a>
+    
+    <div class="container">
+      
+    
+    
+    <h1 class="w3-center">
+      Your Bot's Information
+    </h1>
+      
+ 
+        
+<div class="content">
+  <br>
+  <medium>Before you start adding your bot, you need to know that:</medium>
+      <ul>
+                  <li>You must join our <a href="">Discord Server</a> to add bots.</li>
+                  <li>Your bot cannot be a fork of another.</li>
+                 <li>Your bot must be secure with all commands, and without much glitches</li>
+  </ul>
+    <form action="/api/newbot" method="post" id="newboat" class="w3-center">
+      <input class="form-control" type="text" id="keyHere" name="key" style="width:0px;height:0px;visibility: hidden;"><br>
+      <center><font size="4px"><strong>Client ID </strong><font color="red">*</font></font></center>
+      <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">&lt;@</span>
+      </div>      
+      <input class="form-control" type="text" name="boatID" placeholder="Bot Client ID" required><br>
+      <div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2">></span>
+      </div>
+      </div>
+      <center><font size="4px"><strong>Prefix </strong><font color="red">*</font></font></center>
+      <input class="form-control" type="text" name="prefix" placeholder="Prefix" required><br>
+      <center><font size="4px"><strong>Library </strong><font color="red">*</font></font></center>
+                                  <div class="form-group">
+                                <select id="library" name="library" class="form-control custom-select" required>
+                                    <option selected value="">Select a library</option>
+                                    <option value="Akairo">Akairo</option>
+                                    <option value="discordcr">discordcr</option>
+                                    <option value="dscord">dscord</option>
+                                    <option value="Discord.Net">Discord.Net</option>
+                                    <option value="DSharpPlus">DSharpPlus</option>
+                                    <option value="Nostrum">Nostrum</option>
+                                    <option value="DiscordGo">DiscordGo</option>
+                                    <option value="Discord.hs">Discord.hs</option>
+                                    <option value="Discord4J">Discord4J</option>
+                                    <option value="Javacord">Javacord</option>
+                                    <option value="JDA">JDA</option>
+                                    <option value="discord.io">discord.io</option>
+                                    <option value="discord.js">discord.js</option>
+                                    <option value="Discordie">Discordie</option>
+                                    <option value="Eris">Eris</option>
+                                    <option value="Discordia">Discordia</option>
+                                    <option value="DiscordPHP">DiscordPHP</option>
+                                    <option value="RestCord">RestCord</option>
+                                    <option value="discord.py">discord.py</option>
+                                    <option value="discordrb">discordrb</option>
+                                    <option value="discord-rs">discord-rs</option>
+                                    <option value="serenity">serenity</option>
+                                    <option value="SwiftDiscord">SwiftDiscord</option>
+                                    <option value="Sword">Sword</option>
+                                    <option value="Custom">Custom</option>
+                                </select>
+                            </div>
+      <center><font size="4px"><strong>Help Command (With Prefix) </strong><font color="red">*</font></font></center>
+      <input class="form-control" type="text" name="helpCommand" placeholder="Help Command" required><br>
+      <center><font size="4px"><strong>Description </strong><font color="red">*</font></font></center>
+      <textarea class="form-control" name="description" placeholder="Description" required></textarea><br>
+      <center><font size="4px"><strong>Github Repository </strong></font></center>
+      <input class="form-control" type="textarea" name="git" placeholder="(Optional)"><br>
+      <center><font size="4px"><strong>Website </strong></font></center>
+      <input class="form-control" type="textarea" name="website" placeholder="(Optional)"><br>
+      <center><font size="4px"><strong>Support Server </strong><font color="red">*</font></font></center>
+      <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">https://discord.gg/</span>
+      </div>      
+      <input class="form-control" type="text" name="support" placeholder="Invite Code" required><br>
+      </div>
+      
+      <br>
+      <br>
+    
+   <form action="#">
+     <center>
+      <button class="btn btn-success btn-sm" type="submit" value="Submit">
+  <i class="send outline icon"></i><font size="5px">Submit</font>
+</button>
+      </center>
+
+</form>   
+      </form>
+    </div>
+  </body>
+  <script>
+    var key = document.getElementById("keyHere");
+    function getAllUrlParams(url) {
+
+  // get query string from url (optional) or window
+  var queryString = url ? url.split('?')[1] : window.location.search.slice(1);
+// NOO
+      // come to newbot.js
+  // we'll store the parameters here
+  var obj = {};
+
+  // if query string exists
+  if (queryString) {
+
+    // stuff after # is not part of query string, so get rid of it
+    queryString = queryString.split('#')[0];
+
+    // split our query string into its component parts
+    var arr = queryString.split('&');
+
+    for (var i=0; i<arr.length; i++) {
+      // separate the keys and the values
+      var a = arr[i].split('=');
+
+      // in case params look like: list[]=thing1&list[]=thing2
+      var paramNum = undefined;
+      var paramName = a[0].replace(/\[\d*\]/, function(v) {
+        paramNum = v.slice(1,-1);
+        return '';
+      });
+
+      // set parameter value (use 'true' if empty)
+      var paramValue = typeof(a[1])==='undefined' ? true : a[1];
+
+      // (optional) keep case consistent
+      paramName = paramName;
+      paramValue = paramValue;
+
+      // if parameter name already exists
+      if (obj[paramName]) {
+        // convert value to array (if still string)
+        if (typeof obj[paramName] === 'string') {
+          obj[paramName] = [obj[paramName]];
+        }
+        // if no array index number specified...
+        if (typeof paramNum === 'undefined') {
+          // put the value on the end of the array
+          obj[paramName].push(paramValue);
+        }
+        // if array index number specified...
+        else {
+          // put the value at that index number
+          obj[paramName][paramNum] = paramValue;
+        }
+      }
+      // if param name doesn't exist yet, set it
+      else {
+        obj[paramName] = paramValue;
+      }
+    }
+  }
+
+  return obj;
+}
+
+    if(getAllUrlParams().code==undefined || getAllUrlParams().code=='undefined'){
+      window.location.replace('https://discord-assist.tk/callback');
+    }
+    key.value = getAllUrlParams().code;
+  </script>
+  <script>
+includeHTML();
+</script>
+</html>

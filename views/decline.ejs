@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.glitch.com/2bbc3353-7a10-4c1c-a84c-8e664bf028d9%2FCapture.PNG?1545000420186">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Discord Ro Bots">
+    <meta property="og:url" content="https://discordrobots.tk">
+    <meta property="og:image" content="https://cdn.glitch.com/2bbc3353-7a10-4c1c-a84c-8e664bf028d9%2FCapture.PNG?1545000420186">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://discordrobots.tk/april">
+  </head>
+  <body>
+    
+    <style>
+      body{
+        background: #7289DA;
+      }
+      
+    </style>
+    
+    <center>
+      <strong><font size="10" class="monospace" color="white">Decline Page</font></strong>
+        </center>
+    <font color="white"><h1>
+      Select a decline reason
+      </h1></font>
+    
+<style>
+.monospace {
+    font-family: Lucida Console, monospace;
+}
+.h3 {
+    margin-left: 550px;
+}
+
+</style>
+    <font color="white">
+    <h3 align="center" class="h3">
+      OAUTH TOKEN BELOW DON'T TOUCH
+    </h3>
+      </font>
+    <form action="./do" method="GET">
+      <select name="reason">
+        <option>Other?</option>
+        <option>Your bot token has been leaked.</option>
+        <option>Owner is not in the server</option>
+        <option>Doesn't meet/fit the requirements</option>
+        <option>No help command!</option>
+        <option>Bot offline for more than 2days.</option>
+        <option>Does not respond</option>
+        <option>Clone of another bot</option>
+        <option>NSFW messages outside of Discord NSFW channels</option>
+      </select>
+      
+      <input name="other-reason" type="text" size="50" placeholder="Custom reason for field (0)">
+      
+      <input name="code" value="<%=req.query.code%>" size="50">
+      <style>
+      .white {
+        color: white;
+        }
+      </style>
+      <font color="white">
+      <button type="submit" class="btn btn-primary white">Submit</button>
+      </font>
+    </form>
+  </body>
+</html>
